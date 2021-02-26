@@ -20,3 +20,10 @@ func (c *MainController) HelloSitepoint() {
 	c.Data["EmailName"] = "cyanxu"
 	c.TplName = "hello-sitepoint.tpl"
 }
+
+func MakeExcelByStructs(sheetName string)int{
+	if sheetName != ""{
+		return 1
+	}
+	return 0
+}
